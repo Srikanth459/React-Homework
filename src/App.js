@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 export const customerData = {
   name: 'Srikanth',
   transactions: [
-    { id:'001', date: '07-Nov-2021', value: 500 },
+    { id:'001', date: '07-Nov-2021', value: 70 },
     { id:'002', date: '01-Oct-2021', value: 400 },
     { id:'003', date: '18-Sep-2021', value: 60 },
     { id:'004', date: '05-Sep-2021', value: 120 },
@@ -14,11 +14,10 @@ export default function App() {
   const [customerName, setCustomerName] = useState('');
   const [allTransactions, setAllTransactions] = useState([]);
   const [totalPoints, setTotalPoints] = useState(0);
-  /* (e.g. a $120 purchase = 2x$20 + 1x$50 = 90 points). */
-
+  
   const getPoint = (transaction) => {
     if (transaction >= 50 && transaction <= 100) {
-      return 1 * 50;
+      return 1 * (transaction - 50);
     } else if (transaction > 100) {
       const twoPointsAmout = transaction - 100;
       return 2 * twoPointsAmout + 1 * 50;

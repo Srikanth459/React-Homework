@@ -1,0 +1,25 @@
+{
+    "name": "Srikanth",
+    "transactions": [
+        {
+            "id": "001",
+            "date": "07-Nov-2021",
+            "value": 70
+        },
+        {
+            "id": "002",
+            "date": "01-Oct-2021",
+            "value": 400
+        },
+        {
+            "id": "003",
+            "date": "18-Sep-2021",
+            "value": 60
+        },
+        {
+            "id": "004",
+            "date": "05-Sep-2021",
+            "value": 120
+        }
+    ]
+}
